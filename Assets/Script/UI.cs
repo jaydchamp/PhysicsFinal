@@ -2,13 +2,10 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine.UI;  // Use TMP_Text for TextMeshPro
-using UnityEditor.Rendering;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
-
-
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -113,7 +110,7 @@ public class UI : MonoBehaviour
     public void QuitSim()
     {
         Debug.Log("quitting game");
-        EditorApplication.isPlaying = false;
+        //EditorApplication.isPlaying = false;
         Application.Quit();
     }
     public void RestartSim()
